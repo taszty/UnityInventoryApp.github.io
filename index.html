@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | eInventory</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1290 height=2796 style="width: 1290px; height: 2796px; background: #0A0A3C"></canvas>
+    <script src="Build/UnityInventoryApp.github.io.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/UnityInventoryApp.github.io.data",
+        frameworkUrl: "Build/UnityInventoryApp.github.io.framework.js",
+        codeUrl: "Build/UnityInventoryApp.github.io.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DylanNelson",
+        productName: "eInventory",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
